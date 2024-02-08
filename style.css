@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(54, 113, 232);
+}
+/* header start */
+.logo img{
+    width: 150px;
+    margin: 0px 20px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    display: block;
+}
+nav div i{
+    color: beige;
+    font-size: 20px;
+}
+nav div{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    margin: 15px 15px;
+    padding: 8px 15x;
+    border-radius: 7px;
+    text-align: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: rgb(47, 44, 249);
+    opacity: 0.8;
+    z-index: 1 ;
+}
+nav div:hover{
+    background-color: rgb(54, 113, 232);
+}
+/* header end */
+
+/* home start */
+.homeimage img{
+    width: 100%;
+}
+.hometext{
+    max-width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+.hometext h1{
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+.hometext h1:hover,.hometext p:hover{
+    text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
+}
+.homevideo video{
+    background-color:  rgb(47, 44, 249);
+    border-radius: 10px;
+    width: 45%;
+    margin: 0px 10px;
+    padding: 20px 10px;
+}
+.homevideo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+/* home end */
+/* selection start */
+.showtext{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+.imagetext img{
+    width: 100%;
+}
+.imagetext h3{
+    padding-top: 15px;
+    text-align: center;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+.imagetext{
+    width: 250px;
+    height: 370px;
+    padding: 8px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 2px  rgb(47, 44, 249);
+    cursor: pointer;
+    transition: 0.7s;
+}
+.imagecontainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.imagetext:hover{
+    transform: scale(1.1);
+}
+/* selection end */
+/* about start */
+.aboutimage img{
+    width: 200px;
+}
+.abouttext p{
+    color: white;
+    margin-left: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+}
+.aboutimagetext{
+    display: flex;
+    margin: 0px 30px;
+    text-align: center;
+    align-items: center;
+}
+.aboutcontainer{
+    margin-top: 50px;
+}
+/* about end */
+/* footer start */
+footer{
+    padding-bottom: 25px;
+    margin: 80px 50px 0px;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px 5px red;
+}
+.footertext{
+    max-width: 100%;
+    margin: auto;
+}
+.footercopy{
+    width: 90%;
+    margin: auto;
+}
+/* footer end */
+/* media quries */
+@media screen and (max-width:800px)
+{
+    .logo img{
+        width: 100px;
+        margin: 0px;
+    }
+    nav div{
+        margin: 5px;
+        padding: 10px;
+    }
+    nav a{
+        font-size: 10px;
+    }
+    nav div i{
+        font-size: 15px;
+    }
+    .homevideo{
+        flex-wrap: wrap;
+    }
+    .homevideo video{
+        width: 100%;
+    }
+    .abouttext p{
+        text-align: center;
+        line-height: 25px;
+        font-size: 14px;
+    }
+    .aboutimage img{
+        text-align: center;
+        width: 130px;
+        padding-bottom: 20px;
+    }
+    .aboutimagetext{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+    @media screen and (max-width:610px)
+    {
+        .logo img{
+            width: 70px;
+            margin: 10px;
+        }
+        nav div{
+            width: 70px;
+        }
+        .footertext,.footercopy{
+            font-size: 12px;
+        }
+        .aboutimage{
+            width: 100%;
+        }
+        footer{
+            text-align: center;
+        }
+        .abouttext p{
+            line-height: 25px;
+            font-size: 11px;
+        }
+        .aboutimage img{
+            width: 100px;
+        }
+    }
